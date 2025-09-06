@@ -72,7 +72,7 @@ const NavbarMenu: FC = () => {
               "z-50"
             )}
           >
-            AJ
+            SB
           </Link>
 
           {/* Desktop Menu Items and Theme Toggle */}

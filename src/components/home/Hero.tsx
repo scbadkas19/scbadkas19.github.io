@@ -19,11 +19,11 @@ export default function Hero() {
       className: "text-neutral-800 dark:text-white"
     },
     {
-      text: "Akhilesh",
+      text: "Saurabh",
       className: "text-neutral-800 dark:text-white font-bold"
     },
     {
-      text: "Jadhav",
+      text: "Badkas",
       className: "text-neutral-800 dark:text-white font-bold"
     }
   ];
@@ -45,17 +45,17 @@ export default function Hero() {
           </div>
           <div className="md:hidden">
             <h1 className="text-4xl sm:text-5xl font-bold text-neutral-800 dark:text-white">
-              Hi, I'm Akhilesh Jadhav
+              Hi, I'm Saurabh Badkas
             </h1>
           </div>
           
           <p className="text-neutral-600 dark:text-white/80 max-w-2xl mx-auto text-center mt-6">
-            In today's interconnected landscape, I transform complex challenges into elegant solutions through the artistry of full-stack development. Orchestrating microservices is my signature, ensuring your systems don't just function—they thrive across clouds with seamless precision.
+            {'In today’s data-driven world, I bridge business and technology by transforming raw information into intelligent systems. From designing resilient data pipelines to engineering scalable solutions, I ensure insights don’t just inform—they drive impact with clarity and precision.'}
           </p>
 
           <div className="flex gap-4 mt-8">
             <a
-              href="https://github.com/asJ26"
+              href="https://github.com/scbadkas19"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-white dark:bg-neutral-900 rounded-full hover:scale-110 transition-transform duration-200"
@@ -63,7 +63,7 @@ export default function Hero() {
               <BsGithub className="w-6 h-6" />
             </a>
             <a
-              href="https://www.linkedin.com/in/akhilesh-s-jadhav/"
+              href="https://www.linkedin.com/in/saurabh-badkas/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-white dark:bg-neutral-900 rounded-full hover:scale-110 transition-transform duration-200"
@@ -71,7 +71,7 @@ export default function Hero() {
               <BsLinkedin className="w-6 h-6" />
             </a>
             <a
-              href="https://medium.com/@akhileshjadhav26"
+              href="https://medium.com/@scbadkas19"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-white dark:bg-neutral-900 rounded-full hover:scale-110 transition-transform duration-200"

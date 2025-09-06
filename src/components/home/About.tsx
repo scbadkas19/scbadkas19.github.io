@@ -61,7 +61,7 @@ export default function About() {
                 className="text-justify"
               >
                 <p className="text-neutral-700 dark:text-white/90 mb-4">
-                  I&apos;m a versatile Software and Data Engineer with over 3 years of experience building scalable distributed systems that seamlessly integrate front-end, back-end, and data-driven solutions. My expertise spans microservices architectures, RESTful APIs, data pipelines, and cloud-native development across AWS and GCP environments. I have designed and developed high-performance, data-intensive solutions that enhance system reliability, efficiency, and user experience in diverse domains, including fraud detection, workflow automation, and large-scale data processing.</p>
+                  I&apos;m a versatile Software and Data Engineer with over 4 years of experience building scalable distributed systems that seamlessly integrate front-end, back-end, and data-driven solutions. My expertise spans microservices architectures, RESTful APIs, data pipelines, and cloud-native development across AWS and GCP environments. I have designed and developed high-performance, data-intensive solutions that enhance system reliability, efficiency, and user experience in diverse domains, including fraud detection, workflow automation, and large-scale data processing.</p>
                 <p className="text-neutral-700 dark:text-white/90 mb-6">
                   My technical stack includes Java, Python, SQL, React, Spring Boot, and Node.js, complemented by containerization (Docker, Kubernetes) and DevOps automation (CI/CD, Terraform). I have designed and optimized ETL pipelines, real-time data streaming, and event-driven architectures using Apache Kafka, Apache Spark, and Airflow. With hands-on experience in database performance tuning—leveraging PostgreSQL, MySQL, MongoDB, and Redis caching—I ensure efficient data storage, retrieval, and processing for analytics and reporting. Beyond software engineering, I specialize in big data engineering and cloud-based data warehousing, working with Snowflake, BigQuery, and Redshift to transform raw data into actionable insights. Whether it&apos;s implementing data-driven decision-making, optimizing large-scale backend systems, or building resilient cloud architectures, I approach each challenge with a focus on scalability, security, and innovation—bridging the gap between software development and data engineering to drive business value.</p>
               </motion.div>
@@ -70,7 +70,7 @@ export default function About() {
 
           <div className="mt-12 max-w-3xl mx-auto px-4 relative">
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
-              <Stat label="Years Experience" value="3+" />
+              <Stat label="Years Experience" value="4+" />
               <Stat label="Projects Completed" value="15+" />
               <Stat label="Technologies" value="20+" />
             </div>

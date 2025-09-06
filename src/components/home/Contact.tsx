@@ -51,12 +51,12 @@ export default function Contact() {
                     Drop me a line at
                   </h3>
                   <p className="text-neutral-600 dark:text-white/80">
-                    akhileshjadhav26@gmail.com
+                    scbadkas19@gmail.com
                   </p>
                 </div>
 
                 <ButtonLitLink
-                  href="mailto:akhileshjadhav26@gmail.com"
+                  href="mailto:scbadkas19@gmail.com"
                   className="mt-4"
                 >
                   Mail Me →
@@ -82,12 +82,12 @@ export default function Contact() {
                     Call me at
                   </h3>
                   <p className="text-neutral-600 dark:text-white/80">
-                    +1 680-910-9825
+                    +1 571-201-0045
                   </p>
                 </div>
 
                 <ButtonLitLink
-                  href="tel:+16809109825"
+                  href="tel:+15712010045"
                   className="mt-4"
                 >
                   Call Me →
