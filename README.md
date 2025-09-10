@@ -10,7 +10,7 @@ A sleek and interactive portfolio website showcasing my professional journey and
 ## ✨ Key Features
 
 - **Interactive UI Elements**
-  - 3D card effects
+  - 3D card effectss
   - Particle animations
   - Smooth transitions
   - Custom cursor effects
