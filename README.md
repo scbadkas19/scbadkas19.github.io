@@ -5,7 +5,7 @@ A sleek and interactive portfolio website showcasing my professional journey and
 ![Portfolio Preview](/public/images/projects/Portfolio_light.png)
 ![Portfolio Preview](/public/images/projects/Portfolio_dark.png)
 
-🔗 **[Live Demo](https://akhileshjadhav.info/)**
+🔗 **[Live Demo](https://scbadkas19.github.io/)**
 
 ## ✨ Key Features
 
