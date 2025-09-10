@@ -42,9 +42,9 @@ A sleek and interactive portfolio website showcasing my professional journey and
 
 ## 🔗 Connect With Me
 
-- [GitHub](https://github.com/asJ26)
-- [LinkedIn](https://www.linkedin.com/in/akhilesh-s-jadhav/)
-- [Medium](https://medium.com/@akhileshjadhav26)
+- [GitHub](https://github.com/scbadkas19)
+- [LinkedIn](https://www.linkedin.com/in/saurabh-badkas/)
+- [Medium](https://medium.com/@scbadkas19)
 
 ## 📄 License
 

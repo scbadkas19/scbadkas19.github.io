@@ -1,5 +1,6 @@
 "use client";
 
+import { event } from "@/lib/gtag";
 import { TypewriterEffect } from "../ui/typewriter-effect";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { FaMediumM } from "react-icons/fa";
@@ -59,6 +60,7 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-white dark:bg-neutral-900 rounded-full hover:scale-110 transition-transform duration-200"
+              onClick={() => event("click_outbound", { dest: "github" })}
             >
               <BsGithub className="w-6 h-6" />
             </a>
@@ -67,6 +69,7 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-white dark:bg-neutral-900 rounded-full hover:scale-110 transition-transform duration-200"
+              onClick={() => event("click_outbound", { dest: "linkedin" })}
             >
               <BsLinkedin className="w-6 h-6" />
             </a>
@@ -75,6 +78,7 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-white dark:bg-neutral-900 rounded-full hover:scale-110 transition-transform duration-200"
+              onClick={() => event("click_outbound", { dest: "medium" })}
             >
               <FaMediumM className="w-6 h-6" />
             </a>
