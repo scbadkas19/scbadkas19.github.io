@@ -52,7 +52,7 @@ const education: TimelineItem[] = [
     location: "College Park, MD",
     type: "GPA: 3.18/4",
     date: "Aug 2023 - Dec 2024",
-    description: "Coursework:\n• Data Structures and Algorithms\n• Computer Networks\n• Software Engineering\n• Web Development\n• Artificial Intelligence\n• Cloud Computing\n• Database Systems\n• Operating Systems\n• Computer Organization\n• Digital Electronics"
+    description: "Coursework:\n• Decision Analytics\n• Data Models & Decisions\n• Cloud Computing & Big Data\n• Data Visualization\n• Predictive Analysis & Data Mining\n• Computer Simulation\n• Price Optimization & Revenue Management"
   },
   {
     title: "Bachelor of Technology in Data Science",
@@ -60,7 +60,7 @@ const education: TimelineItem[] = [
     location: "Mumbai, India",
     type: " GPA: 3.02/10.0",
     date: "Jul 2017 - Aug 2021",
-    description: "",
+    description: "Coursework: \n• Decision Analytics \n• Data Models & Decisions \n• Cloud Computing & Big Data \n• Data Visualisation \n• Predictive Analysis & Data Mining \n• Computer Simulation \n• Price Optimization & Revenue Management \n• Data Structure & Algorithms \n• Data Gathering & Cleaning – ETL Process \n• Advanced Database Management System \n• Artificial Intelligence \n• Machine Learning \n• Business Economics \n• Data Science Ethics \n• Big Data \n• Computer Vision \n• Deep Learning \n• Natural Language Processing \n• Financial Institution & Market \n• Predictive Modelling \n• Marketing Management \n• Financial Engineering & Risk Management \n• Marketing Analytics",
     degree: "BTech in Data Science"
   }
 ];
