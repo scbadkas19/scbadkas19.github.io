@@ -20,48 +20,48 @@ interface TimelineItem {
 
 const experiences: TimelineItem[] = [
   {
-    title: "Software Developer Intern",
+    title: "Data Analyst",
+    organization: "Johnson & Johnson",
+    location: "New Brunswick, NJ",
+    type: "Remote",
+    date: "February 2025 - Present",
+    description: ""
+  },
+  {
+    title: "Data Analyst",
     organization: "Citi",
-    location: "San Francisco, CA",
-    type: "remote",
-    date: "June 2024 - Present",
-    description: "At Citi, I developed a microservices-based fraud detection system integrating LLMs for pattern recognition, reducing false positives by 15%. I engineered a RAG dashboard with event-driven architecture using Apache Kafka and optimized MySQL database performance through Hibernate ORM and Redis caching, improving response times by 12%. I also migrated legacy financial applications to GCP with cloud-native solutions, reducing system latency by 18% while maintaining data integrity."
+    location: "New York, NY",
+    type: "Remote",
+    date: "May 2024 - December 2024",
+    description: ""
   },
   {
-    title: "Software Developer",
-    organization: "PTC",
-    location: "Boston, MA",
+    title: "Data Analyst",
+    organization: "Zentek Infosoft",
+    location: "Jaipur, INDIA",
     type: "Remote",
-    date: "June 2023 - May 2024",
-    description: "I spearheaded development of a Manufacturing Workflow Automation Platform using PERN stack, reducing implementation time by 25%. I formulated RESTful APIs with WebSocket protocols that improved system responsiveness by 40% compared to traditional HTTP polling methods. I also designed PostgreSQL database schemas with temporal tables and materialized views, reducing query latency by 30%, and deployed containerized infrastructure on AWS EKS with Jenkins CI/CD pipelines."
-  },
-  {
-    title: "Software Developer",
-    organization: "Sigma Infosolutions",
-    location: "Bangalore, INDIA",
-    type: "Remote",
-    date: "Jun 2020 - Jul 2022",
-    description: "At Sigma Infosolutions, I developed a microservices-based retail system using Java Spring Boot and MySQL, reducing system latency by 15%. I built responsive customer dashboards using React.js with Redux, MongoDB, and Elasticsearch, improving customer engagement by 18%. I also engineered back-end services for an e-commerce platform, optimized MySQL database queries, and orchestrated applications on AWS using Docker containers with CI/CD pipelines, reducing deployment time by 40%."
+    date: "Jun 2020 - Jul 2023",
+    description: ""
   },
 ];
 
 const education: TimelineItem[] = [
   {
-    title: "Master of Science in Computer Science",
-    organization: "Syracuse University",
-    location: "Syracuse, NY",
-    type: "GPA: 3.4/4",
-    date: "Aug 2022 - May 2024",
+    title: "Master of Science in Business Analytics",
+    organization: "University of Maryland",
+    location: "College Park, MD",
+    type: "GPA: 3.18/4",
+    date: "Aug 2023 - Dec 2024",
     description: "Coursework:\n• Data Structures and Algorithms\n• Computer Networks\n• Software Engineering\n• Web Development\n• Artificial Intelligence\n• Cloud Computing\n• Database Systems\n• Operating Systems\n• Computer Organization\n• Digital Electronics"
   },
   {
-    title: "Bachelor of technology in Computer Engineering",
-    organization: "Vishwakarma Institute of Technology",
-    location: "Pune, India",
-    type: " gpa: 8.4/10.0",
-    date: "Jul 2018 - Jul 2022",
-    description: "Specialized in Computer Science with emphasis on software development and data structures. Completed projects in database management and web development.",
-    degree: "BE in Computer Engineering"
+    title: "Bachelor of Technology in Data Science",
+    organization: "NMIMS University",
+    location: "Mumbai, India",
+    type: " GPA: 3.02/10.0",
+    date: "Jul 2017 - Aug 2021",
+    description: "",
+    degree: "BTech in Data Science"
   }
 ];
 

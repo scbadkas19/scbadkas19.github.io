@@ -68,7 +68,7 @@ export default function Projects() {
           className="flex justify-center mt-6 sm:mt-8 lg:mt-16"
         >
           <ButtonLitLink
-            href="https://github.com/asJ26"
+            href="https://github.com/scbadkas19"
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center justify-center px-3 py-1.5 sm:px-4 sm:py-2"

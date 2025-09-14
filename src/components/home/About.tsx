@@ -18,7 +18,7 @@ export default function About() {
             About Me
           </h2>
           <p className="text-neutral-600 dark:text-white/80 max-w-2xl mx-auto">
-            Software Developer | Full Stack Engineer | Data Engineer
+            Software Development Engineer | Data Engineer | AI Engineer
           </p>
         </motion.div>
 
