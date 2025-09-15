@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useRef, useState } from "react";
+import React, { useRef /*, useState*/ } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
 import { cn } from "../../utils/cn";
 import { CardSpotlight } from "../ui/card-spotlight";
@@ -12,7 +12,7 @@ interface TimelineItem {
   location: string;
   type?: string;
   date: string;
-  description: string;
+  description?: string;
   skills?: string[];
   degree?: string;
   gpa?: string;
