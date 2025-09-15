@@ -140,21 +140,24 @@ export default function Experience() {
                   </div>
                 </div>
 
-              <motion.div
-                  initial={{ opacity: 0, x: idx % 2 === 0 ? -20 : 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  className={cn(
-                    "text-sm text-purple-500 dark:text-purple-400 font-semibold mb-2",
-                    "sm:absolute sm:top-0",
-                    "sm:mb-0",
-                    idx % 2 === 0
-                      ? "sm:right-[51%] sm:pr-4"
-                      : "sm:left-[51%] sm:pl-4"
-                  )}
-                >
-                  {item.date}
-                </motion.div>
+          <div className="relative">
+            {education.map((edu: Education, idx: number) => (
+              <div key={idx} className="relative mb-12 sm:mb-24 last:mb-0">
+                <motion.div
+                    initial={{ opacity: 0, x: idx % 2 === 0 ? -20 : 20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    className={cn(
+                      "text-sm text-purple-500 dark:text-purple-400 font-semibold mb-2",
+                      "sm:absolute sm:top-0",
+                      "sm:mb-0",
+                      idx % 2 === 0
+                        ? "sm:right-[51%] sm:pr-4"
+                        : "sm:left-[51%] sm:pl-4"
+                    )}
+                  >
+                    {item.date}
+                  </motion.div>
 
                 {/* Content Card */}
                 <motion.div
@@ -189,7 +192,7 @@ export default function Experience() {
                         <span className="font-medium">{item.date}</span>
                       </div>
 
-                      {/* Type Badge & GPA */}
+                      {/* Type Badge & GPA 
                       <div className="flex items-center gap-3 mb-4">
                         <span className="px-3 py-1 text-xs font-medium rounded-full
                           bg-neutral-100 dark:bg-black/50
@@ -203,7 +206,7 @@ export default function Experience() {
                           </span>
                         )}
                       </div>
-
+                      */}
                       {/* Description */}
                       <p className="text-neutral-700 dark:text-white/90 mb-4 leading-relaxed">
                         {item.description}
