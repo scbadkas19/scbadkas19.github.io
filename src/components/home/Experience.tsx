@@ -140,21 +140,21 @@ export default function Experience() {
                   </div>
                 </div>
 
-                <motion.div
-                    initial={{ opacity: 0, x: idx % 2 === 0 ? -20 : 20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    className={cn(
-                      "text-sm text-purple-500 dark:text-purple-400 font-semibold mb-2",
-                      "sm:absolute sm:top-0",
-                      "sm:mb-0",
-                      idx % 2 === 0
-                        ? "sm:right-[51%] sm:pr-4"
-                        : "sm:left-[51%] sm:pl-4"
-                    )}
-                  >
-                    {item.date}
-                  </motion.div>
+              <motion.div
+                  initial={{ opacity: 0, x: idx % 2 === 0 ? -20 : 20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  className={cn(
+                    "text-sm text-purple-500 dark:text-purple-400 font-semibold mb-2",
+                    "sm:absolute sm:top-0",
+                    "sm:mb-0",
+                    idx % 2 === 0
+                      ? "sm:right-[51%] sm:pr-4"
+                      : "sm:left-[51%] sm:pl-4"
+                  )}
+                >
+                  {item.date}
+                </motion.div>
 
                 {/* Content Card */}
                 <motion.div
@@ -162,7 +162,7 @@ export default function Experience() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, type: "spring" }}
                   viewport={{ once: true }}
-                  className={cn("ml-24 md:ml-0", cardCol)}
+                  className={cn("ml-24 md:ml-0", idx % 2 === 0 ? "md:col-start-1" : "md:col-start-2")}
                   /*
                   className={cn(
                     "ml-24 md:ml-0",
