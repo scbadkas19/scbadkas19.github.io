@@ -141,22 +141,19 @@ export default function Experience() {
                 </div>
 
                 <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6 }}
+                    initial={{ opacity: 0, x: isLeft ? -20 : 20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     className={cn(
-                      "ml-24 md:ml-0 mb-4 md:mb-0",
-                      dateCol
+                      "text-sm text-purple-500 dark:text-purple-400 font-semibold mb-2",
+                      "sm:absolute sm:top-0", // become absolute from small screens upwards
+                      "sm:mb-0",
+                      isLeft
+                        ? "sm:right-[51%] sm:pr-4 text-right"
+                        : "sm:left-[51%] sm:pl-4 text-left"
                     )}
                   >
-                    <div className={cn(
-                      "text-sm font-semibold text-purple-600 dark:text-purple-400",
-                      "pl-1 pr-1",
-                      dateAlign
-                    )}>
-                      {item.date}
-                    </div>
+                    {item.date}
                   </motion.div>
 
                 {/* Content Card */}
