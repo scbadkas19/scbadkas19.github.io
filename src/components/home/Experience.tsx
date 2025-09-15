@@ -141,16 +141,16 @@ export default function Experience() {
                 </div>
 
                 <motion.div
-                    initial={{ opacity: 0, x: isLeft ? -20 : 20 }}
+                    initial={{ opacity: 0, x: idx % 2 === 0 ? -20 : 20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     className={cn(
                       "text-sm text-purple-500 dark:text-purple-400 font-semibold mb-2",
-                      "sm:absolute sm:top-0", // become absolute from small screens upwards
+                      "sm:absolute sm:top-0",
                       "sm:mb-0",
-                      isLeft
-                        ? "sm:right-[51%] sm:pr-4 text-right"
-                        : "sm:left-[51%] sm:pl-4 text-left"
+                      idx % 2 === 0
+                        ? "sm:right-[51%] sm:pr-4"
+                        : "sm:left-[51%] sm:pl-4"
                     )}
                   >
                     {item.date}
