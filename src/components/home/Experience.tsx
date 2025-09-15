@@ -4,47 +4,47 @@ import React, { useRef, useState } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
 import { cn } from "../../utils/cn";
 import { CardSpotlight } from "../ui/card-spotlight";
-import { TabSwitch } from "../ui/TabSwitch";
+//import { TabSwitch } from "../ui/TabSwitch";
 
 interface TimelineItem {
   title: string;
   organization: string;
   location: string;
-  type: string;
+  type?: string;
   date: string;
   description: string;
   skills?: string[];
   degree?: string;
   gpa?: string;
 }
-
-const experiences: TimelineItem[] = [
-  {
-    title: "Data Analyst",
-    organization: "Johnson & Johnson",
-    location: "New Brunswick, NJ",
-    type: "Remote",
-    date: "February 2025 - Present",
-    description: ""
-  },
-  {
-    title: "Data Analyst",
-    organization: "Citi",
-    location: "New York, NY",
-    type: "Remote",
-    date: "May 2024 - December 2024",
-    description: ""
-  },
-  {
-    title: "Data Analyst",
-    organization: "Zentek Infosoft",
-    location: "Jaipur, INDIA",
-    type: "Remote",
-    date: "Jun 2020 - Jul 2023",
-    description: ""
-  },
-];
-
+/*
+  const experiences: TimelineItem[] = [
+    {
+      title: "Data Analyst",
+      organization: "Johnson & Johnson",
+      location: "New Brunswick, NJ",
+      type: "Remote",
+      date: "February 2025 - Present",
+      description: ""
+    },
+    {
+      title: "Data Analyst",
+      organization: "Citi",
+      location: "New York, NY",
+      type: "Remote",
+      date: "May 2024 - December 2024",
+      description: ""
+    },
+    {
+      title: "Data Analyst",
+      organization: "Zentek Infosoft",
+      location: "Jaipur, INDIA",
+      type: "Remote",
+      date: "Jun 2020 - Jul 2023",
+      description: ""
+    },
+  ];
+*/
 const education: TimelineItem[] = [
   {
     title: "Master of Science in Business Analytics",
@@ -77,7 +77,7 @@ const TechBadge = ({ children }: { children: React.ReactNode }) => {
 };
 
 export default function Experience() {
-  const [selected, setSelected] = useState<'Experience' | 'Education'>('Experience');
+  //const [selected, setSelected] = useState<'Experience' | 'Education'>('Experience');
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -90,10 +90,11 @@ export default function Experience() {
     restDelta: 0.001
   });
 
-  const items = selected === 'Experience' ? experiences : education;
+  //const items = selected === 'Experience' ? experiences : education;
+  const items = education
 
   return (
-    <section id="experience" className="py-24 relative">
+    <section id="education" className="py-24 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -103,18 +104,19 @@ export default function Experience() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 dark:text-white mb-4">
-            Experience & Education
+            Education
           </h2>
           <p className="text-neutral-600 dark:text-white/80 max-w-2xl mx-auto mb-8">
-            My professional journey and academic background
+            My academic background
           </p>
-
+          {/*
           <TabSwitch
             defaultTab="Experience"
             onTabChange={(tab) => setSelected(tab as 'Experience' | 'Education')}
             tabs={['Experience', 'Education']}
             className="inline-flex"
           />
+          */}
         </motion.div>
 
         <div ref={ref} className="relative">
@@ -138,18 +140,40 @@ export default function Experience() {
                   </div>
                 </div>
 
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                    viewport={{ once: true }}
+                    className={cn(
+                      "ml-24 md:ml-0 mb-4 md:mb-0",
+                      dateCol
+                    )}
+                  >
+                    <div className={cn(
+                      "text-sm font-semibold text-purple-600 dark:text-purple-400",
+                      "pl-1 pr-1",
+                      dateAlign
+                    )}>
+                      {item.date}
+                    </div>
+                  </motion.div>
+
                 {/* Content Card */}
                 <motion.div
                   initial={{ opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, type: "spring" }}
                   viewport={{ once: true }}
+                  className={cn("ml-24 md:ml-0", cardCol)}
+                  /*
                   className={cn(
                     "ml-24 md:ml-0",
                     selected === 'Experience'
                       ? idx % 2 === 0 ? "md:col-start-1" : "md:col-start-2"
                       : idx % 2 === 0 ? "md:col-start-2" : "md:col-start-1"
                   )}
+                  */
                 >
                   <CardSpotlight className="w-full rounded-xl bg-white dark:bg-[#030712] border border-neutral-200 dark:border-neutral-800 overflow-hidden transition-all duration-300 ease-in-out hover:shadow-xl hover:shadow-neutral-100/30 dark:hover:shadow-neutral-900/30 hover:border-neutral-300 dark:hover:border-neutral-700">
                     <div className="p-6">
