@@ -35,7 +35,7 @@ const certifications = [
     date: "Oct 2025",
     issuer: "LinkedIN",
     link: "https://www.linkedin.com/in/saurabh-badkas/"
-  }
+  },
   {
     title: "CS50 Certificate",
     subtitle: "CS Fundamentals",
@@ -43,7 +43,7 @@ const certifications = [
     date: "Oct 2025",
     issuer: "LinkedIN",
     link: "https://www.linkedin.com/in/saurabh-badkas/"
-  }
+  },
   {
     title: "Salesforce Certified Agentforce Specialist",
     subtitle: "Salesforce Agentforce AI",
