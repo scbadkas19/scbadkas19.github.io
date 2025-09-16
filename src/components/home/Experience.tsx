@@ -153,10 +153,26 @@ export default function Experience() {
                   </motion.div>
 
                 {/* Timeline Node */}
-                <div className="absolute left-9 md:left-1/2 -translate-x-1/2">
+                <div className="hidden sm:block absolute left-1/2 -translate-x-1/2 -translate-y-[0.5px] top-0">
                   <div className="relative">
-                    <div className="absolute -inset-2 bg-gradient-to-r from-neutral-500/30 to-neutral-600/30 dark:from-purple-500/20 dark:to-purple-600/20 rounded-full opacity-0 group-hover:opacity-100 blur transition duration-500" />
-                    <div className="relative w-5 h-5 rounded-full border-4 border-neutral-500 dark:border-purple-500/50 bg-white dark:bg-black group-hover:border-neutral-600 dark:group-hover:border-purple-400 transition-colors duration-300" />
+                    <div className="absolute inset-0 -m-[1px] bg-white dark:bg-black" />
+                    <motion.div
+                      initial={{ scale: 0, rotate: 0 }}
+                      whileInView={{
+                        scale: 1,
+                        rotate: 360,
+                        transition: {
+                          scale: { duration: 0.5 },
+                          rotate: { duration: 1, ease: "easeOut" },
+                        },
+                      }}
+                      viewport={{ once: true }}
+                      className="relative w-7 h-7 flex items-center justify-center"
+                    >
+                      {React.createElement(educationIcons[idx % educationIcons.length], {
+                        className: "w-6 h-6 text-purple-500",
+                      })}
+                    </motion.div>
                   </div>
                 </div>
 
@@ -190,7 +206,7 @@ export default function Experience() {
                           <span>•</span>
                           <span>{item.location}</span>
                         </div>
-                        <span className="font-medium">{item.date}</span>
+                        {/*<span className="font-medium">{item.date}</span>*/}
                       </div>
 
                       {/* Type Badge & GPA 
