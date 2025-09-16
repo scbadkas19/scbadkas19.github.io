@@ -133,16 +133,16 @@ export default function Experience() {
             className="absolute left-9 md:left-1/2 h-full w-[2px] bg-gradient-to-b from-neutral-500 to-neutral-700 dark:from-purple-500/50 dark:to-purple-600/50"
           />
 
-          <div className="Relative"/*"relative space-y-12"*/>
+          <div className="relative space-y-12">
             {items.map((item, idx) => (
-              <div key={idx} className="relative mb-12 sm:mb-24 last:mb-0"/*"relative group md:grid md:grid-cols-2 md:gap-8"*/>
+              <div key={idx} className="relative group md:grid md:grid-cols-2 md:gap-8">
                 <motion.div
                     initial={{ opacity: 0, x: idx % 2 === 0 ? -20 : 20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     className={cn(
                       "text-sm text-purple-500 dark:text-purple-400 font-semibold mb-2",
-                      "sm:absolute sm:top-0",
+                      "sm:absolute sm:top-0 sm:mb-0 z-20",
                       "sm:mb-0",
                       idx % 2 === 0
                         ? "sm:right-[51%] sm:pr-4"
