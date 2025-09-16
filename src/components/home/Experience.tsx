@@ -129,25 +129,32 @@ export default function Experience() {
             className="absolute left-9 md:left-1/2 h-full w-[2px] bg-gradient-to-b from-neutral-500 to-neutral-700 dark:from-purple-500/50 dark:to-purple-600/50"
           />
 
-<div className="relative space-y-12">
-            {education.map((item, idx) => (
-              <div key={idx} className="relative mb-12 sm:mb-24 last:mb-0">
-                {/* Date on alternate sides */}
+          <div className="relative space-y-12">
+            {items.map((item, idx) => (
+              <div key={idx} className="relative group md:grid md:grid-cols-2 md:gap-8">
                 <motion.div
-                  initial={{ opacity: 0, x: idx % 2 === 0 ? -20 : 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  className={cn(
-                    "text-sm text-purple-500 dark:text-purple-400 font-semibold mb-2",
-                    "sm:absolute sm:top-0",
-                    "sm:mb-0",
-                    idx % 2 === 0
-                      ? "sm:right-[51%] sm:pr-4"
-                      : "sm:left-[51%] sm:pl-4"
-                  )}
-                >
-                  {item.date}
-                </motion.div>
+                    initial={{ opacity: 0, x: idx % 2 === 0 ? -20 : 20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    className={cn(
+                      "text-sm text-purple-500 dark:text-purple-400 font-semibold mb-2",
+                      "sm:absolute sm:top-0",
+                      "sm:mb-0",
+                      idx % 2 === 0
+                        ? "sm:right-[51%] sm:pr-4"
+                        : "sm:left-[51%] sm:pl-4"
+                    )}
+                  >
+                    {item.date}
+                  </motion.div>
+                                  
+                {/* Timeline Node */}
+                <div className="absolute left-9 md:left-1/2 -translate-x-1/2">
+                  <div className="relative">
+                    <div className="absolute -inset-2 bg-gradient-to-r from-neutral-500/30 to-neutral-600/30 dark:from-purple-500/20 dark:to-purple-600/20 rounded-full opacity-0 group-hover:opacity-100 blur transition duration-500" />
+                    <div className="relative w-5 h-5 rounded-full border-4 border-neutral-500 dark:border-purple-500/50 bg-white dark:bg-black group-hover:border-neutral-600 dark:group-hover:border-purple-400 transition-colors duration-300" />
+                  </div>
+                </div>
 
                 {/* Content Card */}
                 <motion.div
@@ -196,7 +203,7 @@ export default function Experience() {
                           </span>
                         )}
                       </div>
-                      */}
+                    */}
                       {/* Description */}
                       <p className="text-neutral-700 dark:text-white/90 mb-4 leading-relaxed">
                         {item.description}
