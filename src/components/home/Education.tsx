@@ -4,7 +4,6 @@ import React from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
 import { cn } from "../../utils/cn";
 import { CardHoverEffect } from "../ui/card-hover-effect";
-import { education } from "../../lib/metadata";
 import { FaGraduationCap } from "react-icons/fa6";
 
 interface Education {
