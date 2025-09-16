@@ -221,7 +221,7 @@ export default function Experience() {
                           <span>{item.location}</span>
                         </div>
                         {/*<span className="font-medium">{item.date}</span>*/}
-                      </div>
+                      {/*</div>*/}
 
                       {/* Type Badge & GPA 
                       <div className="flex items-center gap-3 mb-4">
