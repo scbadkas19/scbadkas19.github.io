@@ -8,33 +8,49 @@ const certifications = [
     title: "AWS-certified Data Engineer",
     subtitle: "Amazon Web Services",
     description: "The AWS Certified Data Engineer – Associate Exam validates expertise in designing, implementing, and managing scalable, secure, and efficient data solutions on AWS.",
-    date: "Dec 2024",
+    date: "Dec 2025",
     issuer: "AWS",
-    link: "https://www.credly.com/badges/379bcb44-fd4f-4706-8c78-2c3c5dfe1666/public_url"
+    link: "https://www.linkedin.com/in/saurabh-badkas/"
   },
   {
     title: "Academy Accreditation - Databricks Fundamentals",
     subtitle: "DataBricks",
     description: "Demonstrates foundational knowledge in using Databricks for data engineering and data science, including data pipeline construction and optimization with Apache Spark.",
-    date: "Oct 2024",
+    date: "Oct 2025",
     issuer: "DataBricks",
-    link: "https://credentials.databricks.com/d7f1fbbd-ffbf-4a21-8105-8e02e595e3db#gs.iogdog"
+    link: "https://www.linkedin.com/in/saurabh-badkas/"
   },
   {
     title: "Azure Data Engineer Associate (DP-203) Cert",
     subtitle: "Azure",
     description: "focuses on preparing candidates to design and implement various data storage solutions on Azure, essential for the Azure Data Engineer Associate certification.",
-    date: "Oct 2024",
+    date: "Oct 2025",
     issuer: "LinkedIN",
-    link: "https://www.linkedin.com/learning/certificates/cc5b28bdc099743cd067edbae0031b48ca77e35c73aa49dc3552bf9d4f66a3ab"
+    link: "https://www.linkedin.com/in/saurabh-badkas/"
   },
   {
     title: "Introduction to Data Warehouses",
     subtitle: "Data Warehousing",
     description: "Covers the basic concepts, architecture, and functionalities of data warehouses, including how to design, build, and use them for effective data integration, analysis, and reporting.",
-    date: "Oct 2024",
+    date: "Oct 2025",
     issuer: "LinkedIN",
-    link: "https://www.linkedin.com/learning/certificates/6bd300149101222923e2d90744eb7a16a235b1ebef828e085f26a0da2819362b"
+    link: "https://www.linkedin.com/in/saurabh-badkas/"
+  }
+  {
+    title: "CS50 Certificate",
+    subtitle: "CS Fundamentals",
+    description: "",
+    date: "Oct 2025",
+    issuer: "LinkedIN",
+    link: "https://www.linkedin.com/in/saurabh-badkas/"
+  }
+  {
+    title: "Salesforce Certified Agentforce Specialist",
+    subtitle: "Salesforce Agentforce AI",
+    description: "",
+    date: "Oct 2025",
+    issuer: "LinkedIN",
+    link: "https://www.linkedin.com/in/saurabh-badkas/"
   }
 ];
 

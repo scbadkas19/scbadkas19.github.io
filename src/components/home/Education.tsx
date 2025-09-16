@@ -15,15 +15,15 @@ interface Education {
 
 export const education = [
     {
-      title: "Master of Science in Computer Science",
-      institution: "Syracuse University",
-      location: "Syracuse, NY",
-      date: "2022 - 2024",
+      title: "Master of Science in Business Analytics",
+      institution: "University of Maryland",
+      location: "College Park, MD",
+      date: "2023 - 2025",
     },
     {
-      title: "Bachelor of Engineering in Information Technology",
-      institution: "University of Pune",
-      location: "Pune, IN",
+      title: "Bachelor of Technology in Data Science",
+      institution: "NMIMS University",
+      location: "Mumbai, IN",
       date: "2017 - 2021",
     }
   ];
