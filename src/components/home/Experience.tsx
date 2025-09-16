@@ -97,11 +97,6 @@ export default function Experience() {
   //const items = selected === 'Experience' ? experiences : education;
   const items = education
 
-  // DATE goes on the OPPOSITE side of the card (hugs the line)
-  const dateOppositeClass = isCardLeft
-    ? "sm:left-[51%] sm:pl-4 text-left"
-    : "sm:right-[51%] sm:pr-4 text-right";
-
   return (
     <section id="education" className="py-24 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
