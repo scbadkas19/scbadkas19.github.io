@@ -145,8 +145,8 @@ export default function Experience() {
                       "sm:absolute sm:top-0 sm:mb-0 z-20",
                       "sm:mb-0",
                       idx % 2 === 0
-                        ? "sm:right-[51%] sm:pr-4"
-                        : "sm:left-[51%] sm:pl-4"
+                        ? "sm:right-[51%] sm:pr-4 text-right"
+                        : "sm:left-[51%] sm:pl-4 text-left"
                     )}
                   >
                     {item.date}
