@@ -136,9 +136,9 @@ export default function Experience() {
             <div className="absolute inset-0 bg-gradient-to-b from-purple-600 to-transparent opacity-50" />
           </motion.div>            
 
-          <div className="relative space-y-12">
+          <div className="relative"/*"relative space-y-12"*/>
             {items.map((item, idx) => (
-              <div key={idx} className="relative group md:grid md:grid-cols-2 md:gap-8">
+              <div key={idx} className="relative mb-12 sm:mb-24 last:mb-0">
                 <motion.div
                     initial={{ opacity: 0, x: idx % 2 === 0 ? -20 : 20 }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -195,18 +195,29 @@ export default function Experience() {
                   )}
                   */
                 >
+                  {/*
                   <CardSpotlight className="w-full rounded-xl bg-white dark:bg-[#030712] border border-neutral-200 dark:border-neutral-800 overflow-hidden transition-all duration-300 ease-in-out hover:shadow-xl hover:shadow-neutral-100/30 dark:hover:shadow-neutral-900/30 hover:border-neutral-300 dark:hover:border-neutral-700">
                     <div className="p-6">
-                      {/* Title */}
+                  */}
+                      {/* Title 
                       <h3 className="text-lg font-semibold text-neutral-900 dark:text-white mb-2">
                         {item.title}
                       </h3>
+                      */}
 
-                      {/* Organization, Location, and Date */}
+                    <CardHoverEffect>
+                    <div className="p-4 sm:p-6">
+                      <h3 className="text-base sm:text-lg font-semibold text-neutral-900 dark:text-white mb-2">
+                        {item.title}
+                      </h3>
+
+                      {/* Organization, Location, and Date 
                       <div className="flex items-center justify-between text-sm text-neutral-600 dark:text-white/80 mb-3">
                         <div className="flex items-center gap-2">
+                      */}
+                          <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2 text-xs sm:text-sm text-neutral-600 dark:text-neutral-400 mb-3 sm:mb-4">
                           <span className="font-medium">{item.organization}</span>
-                          <span>•</span>
+                          <span className="hidden sm:inline">•</span>
                           <span>{item.location}</span>
                         </div>
                         {/*<span className="font-medium">{item.date}</span>*/}
@@ -226,13 +237,13 @@ export default function Experience() {
                           </span>
                         )}
                       </div>
-                    */}
-                      {/* Description */}
+                      */}
+                      {/* Description 
                       <p className="text-neutral-700 dark:text-white/90 mb-4 leading-relaxed">
                         {item.description}
                       </p>
-
-                      {/* Skills */}
+                      */}
+                      {/* Skills 
                       {item.skills && (
                         <div className="flex flex-wrap gap-2">
                           {item.skills.map((skill) => (
@@ -242,8 +253,9 @@ export default function Experience() {
                           ))}
                         </div>
                       )}
+                      */}
                     </div>
-                  </CardSpotlight>
+                  </CardHoverEffect> {/*</CardSpotlight>*/}
                 </motion.div>
               </div>
             ))}
