@@ -96,7 +96,10 @@ export default function Experience() {
 
   //const items = selected === 'Experience' ? experiences : education;
   const items = education
-
+  
+  // decide where the CARD goes (left/right column)
+  const isCardLeft = item.side ? item.side === 'left' : idx % 2 === 0;
+  const cardColClass = isCardLeft ? "md:col-start-1" : "md:col-start-2";
   // DATE goes on the OPPOSITE side of the card (hugs the line)
   const dateOppositeClass = isCardLeft
     ? "sm:left-[51%] sm:pl-4 text-left"
