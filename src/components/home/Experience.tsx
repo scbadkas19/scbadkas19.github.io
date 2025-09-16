@@ -5,6 +5,7 @@ import { motion, useScroll, useSpring } from "framer-motion";
 import { cn } from "../../utils/cn";
 import { CardSpotlight } from "../ui/card-spotlight";
 //import { TabSwitch } from "../ui/TabSwitch";
+import { FaGraduationCap } from "react-icons/fa6";
 
 interface TimelineItem {
   title: string;
@@ -17,6 +18,9 @@ interface TimelineItem {
   degree?: string;
   gpa?: string;
 }
+
+const educationIcons = [FaGraduationCap];
+
 /*
   const experiences: TimelineItem[] = [
     {
@@ -81,7 +85,7 @@ export default function Experience() {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start end", "center start"],
+    offset: ["start 80%", "center start"],
   });
 
   const scaleY = useSpring(scrollYProgress, {
@@ -147,7 +151,7 @@ export default function Experience() {
                   >
                     {item.date}
                   </motion.div>
-                                  
+
                 {/* Timeline Node */}
                 <div className="absolute left-9 md:left-1/2 -translate-x-1/2">
                   <div className="relative">
