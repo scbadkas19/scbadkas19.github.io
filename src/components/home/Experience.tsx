@@ -96,10 +96,7 @@ export default function Experience() {
 
   //const items = selected === 'Experience' ? experiences : education;
   const items = education
-  
-  // decide where the CARD goes (left/right column)
-  const isCardLeft = items.side ? item.side === 'left' : idx % 2 === 0;
-  const cardColClass = isCardLeft ? "md:col-start-1" : "md:col-start-2";
+
   // DATE goes on the OPPOSITE side of the card (hugs the line)
   const dateOppositeClass = isCardLeft
     ? "sm:left-[51%] sm:pl-4 text-left"
@@ -139,13 +136,16 @@ export default function Experience() {
           <motion.div
             style={{ scaleY, transformOrigin: "top" }}
             className="absolute left-9 md:left-1/2 h-full w-[2px] bg-gradient-to-b from-neutral-500 to-neutral-700 dark:from-purple-500/50 dark:to-purple-600/50"
-          />
+          >
+            <div className="absolute inset-0 bg-gradient-to-b from-purple-600 via-purple-500 to-transparent [mask-image:linear-gradient(to_bottom,white_70%,transparent_100%)]" />
+            <div className="absolute inset-0 bg-gradient-to-b from-purple-600 to-transparent opacity-50" />
+          </motion.div>            
 
           <div className="relative space-y-12">
             {items.map((item, idx) => (
               <div key={idx} className="relative group md:grid md:grid-cols-2 md:gap-8">
                 <motion.div
-                    initial={{ opacity: 0, x: idx % 2 === isCardLeft ? -20 : 20 }}
+                    initial={{ opacity: 0, x: idx % 2 === 0 ? -20 : 20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     className={cn(
