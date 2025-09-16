@@ -125,12 +125,12 @@ export default function Experience() {
 
         <div ref={ref} className="relative">
           {/* Timeline Line */}
-          <div className="absolute left-9 md:left-1/2 h-full w-[2px] bg-neutral-200 dark:bg-neutral-800" />
+          <div className="absolute left-9 md:left-1/2 h-full w-[2px] bg-neutral-200 dark:bg-neutral-800 z-10" />
           
           {/* Animated Line */}
           <motion.div
             style={{ scaleY, transformOrigin: "top" }}
-            className="absolute left-9 md:left-1/2 h-full w-[2px] bg-gradient-to-b from-neutral-500 to-neutral-700 dark:from-purple-500/50 dark:to-purple-600/50"
+            className="absolute left-9 md:left-1/2 h-full w-[2px] bg-gradient-to-b from-neutral-500 to-neutral-700 dark:from-purple-500/50 dark:to-purple-600/50 z-10"
           />
 
           <div className="relative space-y-12">
@@ -143,7 +143,6 @@ export default function Experience() {
                     className={cn(
                       "text-sm text-purple-500 dark:text-purple-400 font-semibold mb-2",
                       "sm:absolute sm:top-0 sm:mb-0 z-20",
-                      "sm:mb-0",
                       idx % 2 === 0
                         ? "sm:right-[51%] sm:pr-4 text-right"
                         : "sm:left-[51%] sm:pl-4 text-left"
