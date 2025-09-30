@@ -5,7 +5,7 @@ import { HoverExpandableCard } from '../ui/hover-expandable-card';
 
 const certifications = [
   {
-    title: "AWS-certified Data Engineer",
+    title: "AWS Data Engineer",
     subtitle: "Amazon Web Services",
     description: "The AWS Certified Data Engineer – Associate Exam validates expertise in designing, implementing, and managing scalable, secure, and efficient data solutions on AWS.",
     date: "Dec 2025",
@@ -21,11 +21,11 @@ const certifications = [
     link: "https://www.linkedin.com/in/saurabh-badkas/"
   },
   {
-    title: "Azure Data Engineer Associate (DP-203) Cert",
+    title: "Fabric Data Engineer Associate",
     subtitle: "Azure",
-    description: "focuses on preparing candidates to design and implement various data storage solutions on Azure, essential for the Azure Data Engineer Associate certification.",
+    description: "Focuses on preparing candidates to design and implement various data storage solutions on Azure, essential for the Azure Data Engineer Associate certification.",
     date: "Oct 2025",
-    issuer: "LinkedIN",
+    issuer: "LinkedIn",
     link: "https://www.linkedin.com/in/saurabh-badkas/"
   },
   {
@@ -33,7 +33,7 @@ const certifications = [
     subtitle: "Data Warehousing",
     description: "Covers the basic concepts, architecture, and functionalities of data warehouses, including how to design, build, and use them for effective data integration, analysis, and reporting.",
     date: "Oct 2025",
-    issuer: "LinkedIN",
+    issuer: "LinkedIn",
     link: "https://www.linkedin.com/in/saurabh-badkas/"
   },
   {
@@ -41,7 +41,7 @@ const certifications = [
     subtitle: "CS Fundamentals",
     description: "",
     date: "Oct 2025",
-    issuer: "LinkedIN",
+    issuer: "LinkedIn",
     link: "https://www.linkedin.com/in/saurabh-badkas/"
   },
   {
@@ -49,9 +49,27 @@ const certifications = [
     subtitle: "Salesforce Agentforce AI",
     description: "",
     date: "Oct 2025",
-    issuer: "LinkedIN",
+    issuer: "LinkedIn",
     link: "https://www.linkedin.com/in/saurabh-badkas/"
   }
+  /*
+  {
+    title: "Forage: BCG AI",
+    subtitle: "AI Implementation",
+    description: "",
+    date: "Oct 2025",
+    issuer: "LinkedIn",
+    link: "https://www.linkedin.com/in/saurabh-badkas/"
+  },
+  {
+    title: "AWS AI Practitioner",
+    subtitle: "Salesforce Agentforce AI",
+    description: "",
+    date: "Oct 2025",
+    issuer: "LinkedIn",
+    link: "https://www.linkedin.com/in/saurabh-badkas/"
+  }
+  */
 ];
 
 export default function Certifications() {
