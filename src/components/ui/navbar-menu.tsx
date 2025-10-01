@@ -38,8 +38,8 @@ const NavbarMenu: FC = () => {
     { name: "Home", link: "#hero" },
     { name: "About", link: "#about" },
     //{ name: "Experience", link: "#experience" },
-    { name: "Education", link: "#education" },
     { name: "Projects", link: "#projects" },
+    { name: "Education", link: "#education" },
     { name: "Skills", link: "#skills" },
     { name: "Certifications", link: "#certifications" },
     { name: "Contact", link: "#contact" }
