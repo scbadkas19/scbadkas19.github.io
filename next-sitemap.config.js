@@ -2,4 +2,5 @@
 module.exports = {
     siteUrl: 'https://saurabhbadkas.info',
     generateRobotsTxt: true,
+    outDir: './out',
   }

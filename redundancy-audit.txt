@@ -1,0 +1,13 @@
+Key Redundancies:
+1. Duplicate configs: next.config.ts duplicates next.config.js; tailwind.config.ts duplicates tailwind.config.js.
+2. Unused hooks & helpers: src/hooks/useMediaQuery.ts, useScrollProgress.ts, useFormValidation.ts, and the custom useTheme plus src/lib/utils.ts, animations.ts, metadata.ts, smoothScroll.ts.
+3. Unused UI/FX components: multiple exports under src/components/ui (ScrollToTop, PageTransition, background-beams, SocialLinks, CustomCursor, aceternity-typewriter, hero-parallax, ProjectModal, expandable-card, card-3d-effect, canvas-reveal-effect, toggle-switch, category-parallax, Loading, SimpleTabSwitch, grid-expandable, TabSwitch, ThemeToggle) and particle background assets.
+4. Dead sections & data: Experience section (src/components/home/Experience.tsx) is unused with its dependencies; ErrorBoundary and constants/types files are not referenced.
+5. Empty stubs: src/components/ui/Card.tsx, Button.tsx, and Input.tsx are zero-byte placeholders.
+
+Suggested Next Steps:
+- Remove the duplicate config files or merge settings to the active versions.
+- Delete or revive unused hooks, helpers, and UI components to keep the bundle lean.
+- Either re-enable the Experience section or drop its associated code to avoid dead weight.
+- Prune empty placeholder files unless you plan to implement them soon.
+- After cleanup, run npm run build to ensure everything still compiles.
