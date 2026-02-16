@@ -23,8 +23,8 @@ export default function Contact() {
             Get in Touch
           </h2>
           <p className="text-neutral-600 dark:text-white/80 max-w-2xl mx-auto">
-            Feel free to reach out for collaborations or just a friendly hello
-          </p>
+            Feel free to reach out
+          </p>ß
         </motion.div>
 
         <motion.div
@@ -48,10 +48,10 @@ export default function Contact() {
                 
                 <div className="text-center space-y-2">
                   <h3 className="text-lg font-medium text-neutral-900 dark:text-white">
-                    Drop me a line at
+                    Drop me an email
                   </h3>
                   <p className="text-neutral-600 dark:text-white/80">
-                    scbadkas19@gmail.com
+                    scbadkas99@gmail.com
                   </p>
                 </div>
 
@@ -79,7 +79,7 @@ export default function Contact() {
                 
                 <div className="text-center space-y-2">
                   <h3 className="text-lg font-medium text-neutral-900 dark:text-white">
-                    Call me at
+                    Call me
                   </h3>
                   <p className="text-neutral-600 dark:text-white/80">
                     +1 571-201-0045
