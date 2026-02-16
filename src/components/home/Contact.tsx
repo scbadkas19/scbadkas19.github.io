@@ -24,7 +24,7 @@ export default function Contact() {
           </h2>
           <p className="text-neutral-600 dark:text-white/80 max-w-2xl mx-auto">
             Feel free to reach out
-          </p>ß
+          </p>
         </motion.div>
 
         <motion.div
