@@ -7,14 +7,18 @@ import {
   SiPython, SiJavascript, SiTypescript, SiGo,
   SiHtml5, SiCss3, SiTailwindcss, SiJquery, 
   SiRedux, SiGraphql, SiApachekafka,
-  SiAmazon, SiMicrosoftazure, SiGooglecloud, 
-  SiMysql, SiPostgresql, SiMicrosoftsqlserver, 
+  SiAmazon, SiGooglecloud, 
+  SiMysql, SiPostgresql, 
   SiOracle, SiMongodb, SiRedis,
   SiDocker, SiKubernetes, SiJenkins, SiGit, 
   SiSpringboot, SiReact, 
   SiNextdotjs, SiNodedotjs, SiAngular, 
   SiPostman, SiJira
 } from 'react-icons/si';
+import { DiMsqlServer
+  } from 'react-icons/di'; 
+import { VscAzure
+  } from 'react-icons/vsc'; 
 import { 
   FaJava, FaTerminal, FaSwift, FaCode
 } from 'react-icons/fa';
@@ -43,7 +47,7 @@ const skillRows = [
     { name: 'Redux', icon: SiRedux, color: '#764ABC' },
     { name: 'GraphQL', icon: SiGraphql, color: '#E10098' },
     { name: 'AWS', icon: SiAmazon, color: '#FF9900' },
-    { name: 'Azure', icon: SiMicrosoftazure, color: '#0089D6' },
+    { name: 'Azure', icon: VscAzure, color: '#0089D6' },
     { name: 'GCP', icon: SiGooglecloud, color: '#4285F4' },
   ],
   // Third row - Frameworks & DevOps
@@ -64,7 +68,7 @@ const skillRows = [
     { name: 'MySQL', icon: SiMysql, color: '#4479A1' },
     { name: 'PostgreSQL', icon: SiPostgresql, color: '#336791' },
     { name: 'Oracle', icon: SiOracle, color: '#F80000' },
-    { name: 'SQL Server', icon: SiMicrosoftsqlserver, color: '#CC2927' },
+    { name: 'SQL Server', icon: DiMsqlServer, color: '#CC2927' },
     { name: 'Redis', icon: SiRedis, color: '#DC382D' },
     { name: 'Kafka', icon: SiApachekafka, color: '#231F20' },
     { name: 'JIRA', icon: SiJira, color: '#0052CC' },

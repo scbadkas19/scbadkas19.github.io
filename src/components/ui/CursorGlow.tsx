@@ -11,12 +11,12 @@ export default function CursorGlow() {
   }, []);
 
   useEffect(() => {
-    let rafId: number;
+    let rafId: number | null = null;
     let lastX = 0;
     let lastY = 0;
 
     const handleMouseMove = (e: MouseEvent) => {
-      if (rafId) {
+      if (rafId !== null) {
         cancelAnimationFrame(rafId);
       }
 
