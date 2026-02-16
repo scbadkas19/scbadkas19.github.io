@@ -2,13 +2,17 @@ import { IconType } from 'react-icons';
 import { 
   SiPython, SiJavascript, SiR, SiGo, SiGnubash,
   SiApachespark, SiApachekafka, SiApachehadoop, SiApachehive, SiApacheflink,
-  SiPostgresql, SiMysql, SiMongodb, SiRedis, SiSnowflake, SiOracle, SiMicrosoftsqlserver,
-  SiAmazon, SiGooglecloud, SiMicrosoftazure, SiDatabricks, SiGooglebigquery,
+  SiPostgresql, SiMysql, SiMongodb, SiRedis, SiSnowflake, SiOracle,
+  SiAmazon, SiGooglecloud, SiDatabricks, SiGooglebigquery,
   SiApacheairflow, SiTalend, SiInformatica,
   SiGit, SiJenkins, SiDocker, SiKubernetes, SiTerraform, SiAnsible,
-  SiPowerbi, SiTableau, SiLooker,
+  SiTableau, SiLooker,
   SiScala, SiElasticsearch
 } from 'react-icons/si';
+import { DiMsqlServer
+  } from 'react-icons/di'; 
+import { VscAzure
+  } from 'react-icons/vsc';   
 import { 
   FaDatabase, FaNetworkWired, FaWarehouse, FaWater, 
   FaStream, FaClock, FaLayerGroup, FaChartLine
@@ -46,13 +50,13 @@ export const iconMap: Record<string, { icon: IconType; color: string }> = {
   'Redis': { icon: SiRedis, color: '#DC382D' },
   'Snowflake': { icon: SiSnowflake, color: '#29B5E8' },
   'Oracle': { icon: SiOracle, color: '#F80000' },
-  'SQL Server': { icon: SiMicrosoftsqlserver, color: '#CC2927' },
+  'SQL Server': { icon: DiMsqlServer, color: '#CC2927' },
   'Elasticsearch': { icon: SiElasticsearch, color: '#005571' },
 
   // Cloud
   'AWS': { icon: SiAmazon, color: '#FF9900' },
   'Google Cloud': { icon: SiGooglecloud, color: '#4285F4' },
-  'Azure': { icon: SiMicrosoftazure, color: '#0089D6' },
+  'Azure': { icon: VscAzure, color: '#0089D6' },
   'Databricks': { icon: SiDatabricks, color: '#FF3621' },
   'BigQuery': { icon: SiGooglebigquery, color: '#4285F4' },
 
@@ -70,7 +74,7 @@ export const iconMap: Record<string, { icon: IconType; color: string }> = {
   'Ansible': { icon: SiAnsible, color: '#EE0000' },
 
   // Visualization
-  'Power BI': { icon: SiPowerbi, color: '#F2C811' },
+//  'Power BI': { icon: SiPowerbi, color: '#F2C811' },
   'Tableau': { icon: SiTableau, color: '#E97627' },
   'Looker': { icon: SiLooker, color: '#4285F4' },
   'Analytics': { icon: FaChartLine, color: '#6B7280' }
