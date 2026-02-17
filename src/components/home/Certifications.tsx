@@ -13,12 +13,12 @@ const certifications = [
     link: "https://www.linkedin.com/in/saurabh-badkas/"
   },
   {
-    title: "Academy Accreditation - Databricks Fundamentals",
+    title: "Databricks Fundamentals",
     subtitle: "DataBricks",
     description: "Demonstrates foundational knowledge in using Databricks for data engineering and data science, including data pipeline construction and optimization with Apache Spark.",
     date: "Oct 2025",
     issuer: "DataBricks",
-    link: "https://www.linkedin.com/in/saurabh-badkas/"
+    link: "https://www.linkedin.com/in/saurabh-badkas/overlay/1771288637175/single-media-viewer/?profileId=ACoAACHb51IBJvduB0INGjroCJzw12UjME0_8fQ"
   },
   {
     title: "Fabric Data Engineer Associate",
